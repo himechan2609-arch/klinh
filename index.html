@@ -8,6 +8,33 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<!-- CSS bổ sung để nút bấm Drive hiển thị đồng bộ và đẹp mắt -->
+<style>
+  .btn-drive {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    padding: 8px 16px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 500;
+    transition: all 0.25s ease;
+  }
+  .btn-drive:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-1px);
+  }
+  .btn-drive svg {
+    flex-shrink: 0;
+  }
+</style>
 </head>
 <body>
 
@@ -28,245 +55,315 @@
       <li><a href="#bai-tap" class="nav-link">Bài tập</a></li>
       <li><a href="#tong-ket" class="nav-link">Tổng kết</a></li>
     </ul>
+    <span class="nav-sig">Nguyễn Khánh Linh © 25042471</span>
   </div>
 </header>
 
-<main class="wrap">
-
-  <section id="trang-chu" class="hero">
-    <div class="hero-text">
-      <div class="hero-eyebrow"><span class="pulse-dot"></span>Hành trình công nghệ số</div>
-      <h1 class="reveal">Khám phá tri thức trong <span>kỷ nguyên AI</span></h1>
-      <p class="sub reveal">Không gian lưu trữ hành trình học tập, trải nghiệm thực tiễn và rèn luyện kỹ năng số của Khánh Linh trong học phần Nhập môn Công nghệ số và Ứng dụng Trí tuệ Nhân tạo.</p>
-      <div class="hero-cta reveal">
-        <a href="#bai-tap" class="btn btn-primary">Xem hệ thống bài tập</a>
-        <a href="#gioi-thieu" class="btn btn-ghost">Về bản thân tôi</a>
+<section id="trang-chu">
+  <div class="wrap hero">
+    <div class="reveal">
+      <span class="badge-pill">🏫 Trường Đại học Ngoại ngữ — ĐHQGHN</span>
+      <h1>Nguyễn<br>Khánh Linh</h1>
+      <div class="social-row">
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 3a5 5 0 0 0 5 5v3a8 8 0 0 1-5-1.7V15a6 6 0 1 1-6-6c.34 0 .67.03 1 .08V12a3 3 0 1 0 2 2.83V3z"/></svg></a>
+        <a href="#" aria-label="Mail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M2 7l10 6 10-6"/></svg></a>
+      </div>
+      <p class="hero-meta"><b>MSSV:</b> 25042471 &nbsp;•&nbsp; <b>Ngành:</b> Ngôn ngữ và Văn hóa Hàn Quốc</p>
+      <p class="hero-meta">Lớp học phần: VNU1001_E252063 · Nhập môn Công nghệ số và Trí tuệ nhân tạo</p>
+      <div class="hero-cta">
+        <a href="#bai-tap" class="btn btn-primary">Xem bài tập →</a>
+        <a href="#gioi-thieu" class="btn btn-ghost">Về Khánh Linh</a>
       </div>
     </div>
-    <div class="hero-frame reveal">
-      <div class="frame-ring"></div>
-      <div class="frame-img">KL</div>
-      <div class="frame-sticker">✨</div>
+    <div class="hero-portrait reveal">
+      <!-- THAY ẢNH CÁ NHÂN VÀO src="..." Ở DÒNG DƯỚI -->
+      <img src="khanhlinh.jpg" alt="Ảnh cá nhân Nguyễn Khánh Linh"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="portrait-fallback" style="display:none;"><span>KL</span></div>
     </div>
-  </section>
+    <div class="scroll-cue">Cuộn xuống ⌄</div>
+  </div>
+</section>
 
-  <hr class="sep">
-
-  <section id="gioi-thieu" class="intro reveal">
-    <div class="section-head">
-      <span class="tag">01. BẢN THÂN</span>
-      <h2>Phác họa chân dung</h2>
+<section id="gioi-thieu">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="tag">✦ Trang giới thiệu</span>
+      <h2>Giới thiệu bản thân</h2>
     </div>
     <div class="intro-grid">
-      <div class="intro-left">
-        <h3>Xin chào, tôi là <span>Khánh Linh</span> 🌸</h3>
-        <p>Hiện là sinh viên năng động đang theo học tại trường Đại học Kinh tế - ĐHQGHN. Là một người trẻ thuộc thế hệ mới, tôi luôn mang trong mình tinh thần cầu tiến, mong muốn được khai phá tiềm năng của bản thân thông qua việc tiếp thu công nghệ hiện đại.</p>
-        <p>Học phần VNU1001 không chỉ cung cấp cho tôi những kiến thức tin học văn phòng căn bản mà còn mở ra một thế giới quan mới về cách con người có thể làm chủ, tối ưu hóa công việc hàng ngày nhờ các mô hình AI tiên tiến.</p>
-      </div>
-      <div class="intro-right">
-        <div class="card-glass intro-card">
-          <div class="ic-head">🎓 <span>Học vấn &amp; Định hướng</span></div>
-          <p>Tập trung học hỏi các mô hình phân tích dữ liệu ứng dụng trong khối ngành kinh tế nhằm tăng cường tư duy chiến lược dựa trên dữ liệu thực tế.</p>
-        </div>
-        <div class="card-glass intro-card">
-          <div class="ic-head">🎨 <span>Kỹ năng &amp; Sở thích</span></div>
-          <p>Yêu thích sự sáng tạo, thích tổ chức thông tin dưới dạng hình ảnh trực quan (infographic, mindmap) và nghiên cứu hành vi người dùng trên không gian số.</p>
-        </div>
+      <div class="glass-card full-span reveal">
+        <h3>👋 Xin chào</h3>
+        <p>Xin chào! Mình là Nguyễn Khánh Linh, sinh viên năm nhất ngành Ngôn ngữ và Văn hóa Hàn
+          Quốc tại Trường Đại học Ngoại ngữ – Đại học Quốc gia Hà Nội (ULIS). Mình thích học
+          ngoại ngữ, khám phá công nghệ mới và luôn mong muốn ứng dụng các công cụ số để nâng
+          cao hiệu quả học tập.</p>
+        <p>Trong thời đại AI phát triển mạnh mẽ, mình tin rằng sinh viên không chỉ cần biết sử
+          dụng công nghệ mà còn cần hiểu cách sử dụng công nghệ một cách hiệu quả, có trách
+          nhiệm và đúng mục đích. Vì vậy, mình luôn cố gắng tiếp cận AI với tinh thần học hỏi,
+          xem AI là một người bạn đồng hành hỗ trợ thay vì thay thế quá trình tư duy của bản
+          thân.</p>
       </div>
     </div>
-  </section>
-
-  <hr class="sep">
-
-  <section id="muc-tieu" class="goals reveal">
-    <div class="section-head text-center">
-      <span class="tag">02. ĐỊNH HƯỚNG</span>
-      <h2>Hành trình &amp; Kỳ vọng</h2>
-      <p class="section-sub">Những mục tiêu cụ thể tôi tự đặt ra nhằm tạo đòn bẩy phát triển kỹ năng số toàn diện của bản thân.</p>
-    </div>
-    <div class="goals-grid">
-      <div class="goal-card">
-        <div class="g-num">01</div>
-        <h3>Tối ưu hóa năng suất</h3>
-        <p>Nắm vững cơ chế vận hành của máy tính, hệ điều hành và tận dụng các phím tắt chuyên nghiệp để rút ngắn 30% thời gian xử lý các tác vụ lặp đi lặp lại hàng ngày.</p>
-      </div>
-      <div class="goal-card">
-        <div class="g-num">02</div>
-        <h3>Khai phóng tiềm năng AI</h3>
-        <p>Nâng cao kỹ năng ra lệnh (prompt engineering) để biến AI thành một trợ lý đa nhiệm thông minh, hỗ trợ tích cực trong việc học tập, tóm tắt tài liệu và khai thác thông tin đa chiều.</p>
-      </div>
-      <div class="goal-card">
-        <div class="g-num">03</div>
-        <h3>Ứng dụng có trách nhiệm</h3>
-        <p>Hiểu sâu sắc về đạo đức số, bản quyền và liêm chính học thuật. Biết cách chọn lọc, đối chiếu thông tin từ AI để tránh rơi vào bẫy ảo tưởng nguồn hoặc đạo văn vô ý.</p>
-      </div>
-    </div>
-  </section>
-
-  <hr class="sep">
-
-  <section id="bai-tap" class="works reveal">
-    <div class="section-head">
-      <span class="tag">03. THỰC HÀNH</span>
-      <h2>Hệ thống bài tập cá nhân</h2>
-      <p class="section-sub">Tổng hợp các sản phẩm thực hành được hoàn thiện qua từng tuần học dưới sự hướng dẫn tỉ mỉ của Giảng viên.</p>
-    </div>
-    <div class="works-grid">
-
-      <div class="work-card reveal">
-        <div class="w-meta"><span class="w-tag">Tuần 01</span><span class="w-num">01</span></div>
-        <h3>Thiết bị ngoại vi và Phím tắt thông dụng</h3>
-        <p class="w-desc">Nghiên cứu sâu về kiến trúc phần cứng máy tính và hệ thống thiết bị ngoại vi bổ trợ. Bài thực hành tập trung vào việc liệt kê và phân nhóm các phím tắt hệ thống trên hệ điều hành Windows/macOS nhằm cải thiện tối đa tốc độ làm việc thực tế.</p>
-        <div class="w-toggle" data-target="task-1">Xem bài học rút ra <span class="chevron">▸</span></div>
-        <div class="w-panel" id="task-1">
-          <div class="w-panel-inner">
-            <p><strong>💡 Bài học sâu sắc:</strong> Việc ghi nhớ và chủ động ứng dụng tổ hợp phím tắt thay vì lạm dụng chuột giúp mạch tư duy công việc không bị ngắt quãng. Đây chính là bước đi căn bản nhưng vô cùng quan trọng để chuyên nghiệp hóa thao tác xử lý dữ liệu số.</p>
-          </div>
-        </div>
-        <a href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID_1" target="_blank" rel="noopener" class="btn btn-drive">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="margin-right: 6px; vertical-align: middle;"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
-          Mở bài tập 1 trên Drive
-        </a>
-      </div>
-
-      <div class="work-card reveal">
-        <div class="w-meta"><span class="w-tag">Tuần 02</span><span class="w-num">02</span></div>
-        <h3>Tìm kiếm thông tin và Đánh giá học thuật</h3>
-        <p class="w-desc">Thực hành tìm kiếm nâng cao với các cú pháp toán tử định vị thông tin trên Google Search. Đồng thời, bài làm hướng tới khai thác kho tư liệu học thuật khổng lồ từ Google Scholar và ResearchGate để phục vụ việc trích dẫn nghiên cứu khoa học chuẩn chỉ.</p>
-        <div class="w-toggle" data-target="task-2">Xem bài học rút ra <span class="chevron">▸</span></div>
-        <div class="w-panel" id="task-2">
-          <div class="w-panel-inner">
-            <p><strong>💡 Bài học sâu sắc:</strong> Trong đại dương thông tin số, người làm kinh tế cần giữ được cái đầu lạnh để nhận định đâu là dữ liệu rác, đâu là tri thức khoa học đã được phản biện. Việc lọc thông tin qua các chỉ số định lượng như số lượt trích dẫn giúp nâng tầm độ tin cậy của báo cáo.</p>
-          </div>
-        </div>
-        <a href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID_2" target="_blank" rel="noopener" class="btn btn-drive">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="margin-right: 6px; vertical-align: middle;"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
-          Mở bài tập 2 trên Drive
-        </a>
-      </div>
-
-      <div class="work-card reveal">
-        <div class="w-meta"><span class="w-tag">Tuần 03</span><span class="w-num">03</span></div>
-        <h3>Viết Prompt và Làm việc với Trí tuệ Nhân tạo</h3>
-        <p class="w-desc">Tiếp cận phương pháp Prompt Engineering có cấu trúc rõ ràng bao gồm Bối cảnh, Vai trò, Nhiệm vụ và Ràng buộc đầu ra. Bài thực hành chứng minh khả năng phối hợp nhịp nhàng giữa tư duy con người và hiệu suất tổng hợp dữ liệu cực nhanh của các mô hình ngôn ngữ lớn (LLMs).</p>
-        <div class="w-toggle" data-target="task-3">Xem bài học rút ra <span class="chevron">▸</span></div>
-        <div class="w-panel" id="task-3">
-          <div class="w-panel-inner">
-            <p><strong>💡 Bài học sâu sắc:</strong> Chất lượng phản hồi của AI phản ánh trực tiếp năng lực đặt vấn đề của người sử dụng. Thay vì đặt câu hỏi mơ hồ, một câu lệnh sắc bén, đầy đủ bối cảnh thực tế sẽ giúp AI cung cấp những kiến giải có giá trị thực tiễn cao vượt bậc.</p>
-          </div>
-        </div>
-        <a href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID_3" target="_blank" rel="noopener" class="btn btn-drive">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="margin-right: 6px; vertical-align: middle;"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
-          Mở bài tập 3 trên Drive
-        </a>
-      </div>
-
-      <div class="work-card reveal">
-        <div class="w-meta"><span class="w-tag">Tuần 04</span><span class="w-num">04</span></div>
-        <h3>Giao tiếp và Hợp tác hiệu quả trong Môi trường số</h3>
-        <p class="w-desc">Thiết lập và vận hành quy trình cộng tác làm việc nhóm thông qua các nền tảng điện toán đám mây như Microsoft Teams, Google Workspace và sơ đồ quản trị công việc. Bài tập giải quyết bài toán giao tiếp đồng bộ, phân chia nhiệm vụ và kiểm soát chất lượng dự án từ xa.</p>
-        <div class="w-toggle" data-target="task-4">Xem bài học rút ra <span class="chevron">▸</span></div>
-        <div class="w-panel" id="task-4">
-          <div class="w-panel-inner">
-            <p><strong>💡 Bài học sâu sắc:</strong> Sức mạnh của tập thể trong môi trường số không nằm ở việc tập hợp các cá nhân giỏi, mà nằm ở việc vận hành mượt mà một hệ thống chia sẻ dữ liệu chung, đồng bộ hóa thông tin tức thì để đảm bảo mọi thành viên luôn nắm bắt được tiến độ dự án.</p>
-          </div>
-        </div>
-        <a href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID_4" target="_blank" rel="noopener" class="btn btn-drive">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="margin-right: 6px; vertical-align: middle;"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
-          Mở bài tập 4 trên Drive
-        </a>
-      </div>
-
-      <div class="work-card reveal">
-        <div class="w-meta"><span class="w-tag">Tuần 05</span><span class="w-num">05</span></div>
-        <h3>Sáng tạo Nội dung số và Ứng dụng AI tạo sinh</h3>
-        <p class="w-desc">Phối hợp nhịp nhàng giữa các mô hình AI tạo sinh văn bản và các công cụ hỗ trợ thiết kế tự động như Gamma, Canva. Mục tiêu là chuyển hóa các báo cáo kinh tế khô khan, phức tạp thành các slide trình bày trực quan sinh động, lôi cuốn người xem từ cái nhìn đầu tiên.</p>
-        <div class="w-toggle" data-target="task-5">Xem bài học rút ra <span class="chevron">▸</span></div>
-        <div class="w-panel" id="task-5">
-          <div class="w-panel-inner">
-            <p><strong>💡 Bài học sâu sắc:</strong> Ý tưởng hay đến mấy nếu không được đóng gói và trình bày đẹp mắt thì cũng khó tiếp cận được độc giả. Việc am hiểu và phối hợp các công cụ AI mỹ thuật giúp giảm tải gánh nặng thiết kế thủ công, cho phép tôi tập trung hơn vào việc tinh chỉnh chất lượng nội dung cốt lõi.</p>
-          </div>
-        </div>
-        <a href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID_5" target="_blank" rel="noopener" class="btn btn-drive">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="margin-right: 6px; vertical-align: middle;"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
-          Mở bài tập 5 trên Drive
-        </a>
-      </div>
-
-      <div class="work-card reveal">
-        <div class="w-meta"><span class="w-tag">Tuần 06</span><span class="w-num">06</span></div>
-        <h3>Đạo đức Học thuật và Sử dụng AI có Trách nhiệm</h3>
-        <p class="w-desc">Phân tích chuyên sâu về ranh giới mỏng manh giữa việc tham khảo AI hỗ trợ sáng tạo với hành vi vi phạm liêm chính học thuật. Bài viết đưa ra các ví dụ cụ thể về hiện tượng đạo văn số và đề xuất bộ quy tắc ứng xử chuẩn mực dành cho sinh viên hiện đại.</p>
-        <div class="w-toggle" data-target="task-6">Xem bài học rút ra <span class="chevron">▸</span></div>
-        <div class="w-panel" id="task-6">
-          <div class="w-panel-inner">
-            <p><strong>💡 Bài học sâu sắc:</strong> AI là một người phụ tá xuất sắc nhưng tuyệt đối không được phép là người thay thế tư duy độc lập của chính ta. Việc công khai minh bạch mức độ can thiệp của AI trong bài làm không chỉ là trách nhiệm với đạo đức học thuật mà còn là sự tôn trọng đối với chính năng lực thật sự của bản thân.</p>
-          </div>
-        </div>
-        <a href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID_6" target="_blank" rel="noopener" class="btn btn-drive">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="margin-right: 6px; vertical-align: middle;"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
-          Mở bài tập 6 trên Drive
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-  <hr class="sep">
-
-  <section id="tong-ket" class="summary reveal">
-    <div class="section-head text-center">
-      <span class="tag">04. ĐÁNH GIÁ</span>
-      <h2>Nhìn nhận lại hành trình</h2>
-      <p class="section-sub">Những bài học quý báu tích lũy được sau một chặng đường nỗ lực tự hoàn thiện kỹ năng của bản thân.</p>
-    </div>
-    <div class="summary-box">
-      <div class="summary-left">
-        <p class="quote">"Sự chuẩn bị kỹ lưỡng ngày hôm nay là bệ phóng vững chắc cho thành công ngày mai."</p>
-        <p class="summary-para text-justify">Khép lại môn học Nhập môn Công nghệ số và Ứng dụng Trí tuệ Nhân tạo, tôi tự nhận ra những bước chuyển mình rõ rệt trong tư duy tiếp cận công nghệ. Từ một sinh viên ban đầu còn e dè khi tiếp xúc với các công cụ lập trình hoặc các hệ thống trí tuệ nhân tạo phức tạp, giờ đây tôi đã tự tin biến chúng thành trợ thủ đắc lực hỗ trợ cho các bài báo cáo, dự án nghiên cứu của mình.</p>
-        <p class="summary-para text-justify">Đồng thời, môn học gieo vào tôi ý thức sâu sắc về việc bảo vệ an toàn dữ liệu cá nhân, tuân thủ chặt chẽ liêm chính học thuật và bảo vệ bản quyền trong không gian số. Tôi vô cùng trân trọng sự đồng hành tận tụy và nhiệt huyết từ thầy cô giảng viên, những người đã kiên nhẫn định hướng tư duy đúng đắn và thực tế nhất cho chúng tôi trong suốt hành trình vừa qua.</p>
-      </div>
-      <div class="summary-right">
-        <div class="stat">
-          <div class="stat-num" data-val="100">0</div>
-          <span class="stat-label">Nhiệt huyết hành động</span>
-        </div>
-        <div class="stat">
-          <div class="stat-num" data-val="6">0</div>
-          <span class="stat-label">Sản phẩm hoàn thiện</span>
-        </div>
-        <div class="stat">
-          <div class="stat-num" data-val="10">0</div>
-          <span class="stat-label">Điểm số kỳ vọng</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="footer">
-  <div class="wrap footer-inner">
-    <div class="footer-brand">
-      <div class="seal">KL</div>
-      <span class="fb-name">KHÁNH LINH | DIGITAL PORTFOLIO</span>
-    </div>
-    <p class="copy">&copy; 2026 Nguyễn Khánh Linh. All rights reserved. Designed with passion for VNU1001.</p>
   </div>
+</section>
+
+<section id="muc-tieu">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="tag">✦ Định hướng</span>
+      <h2>Mục tiêu học tập &amp; Portfolio</h2>
+    </div>
+    <div class="goal-grid">
+      <div class="glass-card reveal">
+        <h3>🎯 Mục tiêu học tập</h3>
+        <p>Thông qua học phần Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo, mình mong muốn:</p>
+        <ul>
+          <li>Hiểu những kiến thức nền tảng về công nghệ số và AI.</li>
+          <li>Biết cách tìm kiếm, đánh giá và sử dụng thông tin học thuật đáng tin cậy.</li>
+          <li>Thành thạo các công cụ AI để hỗ trợ học ngoại ngữ và học tập nói chung.</li>
+          <li>Hình thành tư duy sử dụng AI một cách hiệu quả, có trách nhiệm và tuân thủ đạo đức học thuật.</li>
+        </ul>
+      </div>
+      <div class="glass-card reveal">
+        <h3>📘 Mục tiêu của Portfolio</h3>
+        <p>Portfolio này không chỉ là nơi tổng hợp các bài tập đã thực hiện trong học phần mà
+          còn ghi lại quá trình mình học hỏi, trải nghiệm và phát triển kỹ năng số của cá nhân
+          mình.</p>
+        <p>Mỗi bài tập đều phản ánh một bước tiến trong quá trình rèn luyện của bản thân, từ
+          việc tổ chức dữ liệu, tìm kiếm thông tin học thuật, viết prompt hiệu quả đến ứng dụng
+          AI vào học tập và sáng tạo nội dung. Mình hy vọng Portfolio sẽ trở thành một "nhật ký
+          học tập số", giúp nhìn lại những gì đã học và là nền tảng để tiếp tục phát triển trong
+          tương lai.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="bai-tap">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="tag">✦ Bài tập Nhập môn CNS &amp; AI</span>
+      <h2>Sáu bài thực hành trong học kỳ</h2>
+      <p>Bấm "Xem chi tiết" ở mỗi bài để xem đầy đủ các điểm rút ra được liệt kê rõ ràng.</p>
+    </div>
+    <div class="work-list" id="workList"></div>
+  </div>
+</section>
+
+<section id="tong-ket">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="tag">✦ Trang tổng kết</span>
+      <h2>Nhìn lại hành trình học tập</h2>
+    </div>
+
+    <div class="summary-stack">
+      <div class="summary-card reveal">
+        <h3>🔄 Nhìn lại hành trình học tập</h3>
+        <p>Sau khi hoàn thành học phần này, mình nhận ra rằng AI không chỉ là một công nghệ mới
+          mà còn là một công cụ có thể thay đổi cách con người học tập và làm việc. Thông qua
+          các bài tập trong Portfolio, mình đã có cơ hội tiếp cận nhiều công cụ AI, thực hành
+          viết prompt, tìm kiếm tài liệu học thuật, làm việc nhóm trực tuyến và tạo ra các sản
+          phẩm số phục vụ học tập.</p>
+        <p>Quan trọng hơn, mình hiểu rằng hiệu quả của AI không phụ thuộc hoàn toàn vào công
+          nghệ mà phụ thuộc vào cách con người đặt câu hỏi, kiểm chứng thông tin và sử dụng kết
+          quả một cách có trách nhiệm.</p>
+      </div>
+
+      <div class="summary-card reveal">
+        <h3>📚 Những điều mình học được</h3>
+        <p>Qua quá trình thực hiện dự án, mình đã rèn luyện được:</p>
+        <ul>
+          <li>Kỹ năng tìm kiếm và đánh giá nguồn thông tin đáng tin cậy.</li>
+          <li>Kỹ năng viết prompt rõ ràng để AI tạo ra kết quả chính xác hơn.</li>
+          <li>Kỹ năng ứng dụng AI vào học ngoại ngữ, thiết kế nội dung và giải quyết các nhiệm vụ học tập.</li>
+          <li>Ý thức về đạo đức học thuật và trách nhiệm khi sử dụng AI.</li>
+        </ul>
+        <p>Ngoài kiến thức chuyên môn, mình cũng học được cách tự học, quản lý thời gian và phản
+          biện kết quả do AI tạo ra thay vì chấp nhận một cách thụ động.</p>
+      </div>
+
+      <div class="summary-card reveal">
+        <h3>💭 Khó khăn và bài học</h3>
+        <p>Trước khi học học phần Nhập môn Công nghệ số, mình thường phụ thuộc khá nhiều vào AI
+          trong học tập. Mỗi khi gặp bài tập hay cần tìm kiếm thông tin, mình thường sử dụng AI
+          ngay mà ít tự suy nghĩ hoặc kiểm chứng thông tin từ các nguồn khác. Điều này làm giảm
+          khả năng tư duy và sáng tạo của bản thân.</p>
+        <p>After khi học học phần này, mình nhận ra AI chỉ là công cụ hỗ trợ, không thể thay thế
+          tư duy của con người và đôi khi có thể cung cấp thông tin chưa chính xác. Vì vậy, mình
+          cần sử dụng AI một cách có trách nhiệm, luôn kiểm chứng thông tin từ các nguồn uy tín
+          và kết hợp với tư duy, phân tích của bản thân để nâng cao hiệu quả học tập.</p>
+      </div>
+
+      <div class="summary-card reveal">
+        <h3>🚀 Định hướng trong tương lai</h3>
+        <p>Trong thời gian tới, mình sẽ tiếp tục sử dụng AI như một trợ lý học tập để hỗ trợ học
+          ngoại ngữ, nghiên cứu và phát triển các kỹ năng số. Tuy nhiên, mình sẽ luôn giữ nguyên
+          tắc không phụ thuộc vào AI, chủ động tư duy, kiểm chứng thông tin và tuân thủ các quy
+          định về đạo đức học thuật.</p>
+        <p>Mình tin rằng khi được sử dụng đúng cách, AI sẽ không thay thế con người mà sẽ trở
+          thành công cụ giúp mỗi người học tập hiệu quả hơn, sáng tạo hơn và không ngừng phát
+          triển trong thời đại số.</p>
+      </div>
+
+      <div class="summary-card reveal">
+        <h3>💌 Lời cảm ơn</h3>
+        <p>Em xin chân thành cảm ơn các thầy cô giảng đã tận tình hướng dẫn và truyền đạt những
+          kiến thức bổ ích trong suốt quá trình học tập. Những kiến thức và kỹ năng em học được
+          không chỉ giúp em hoàn thành Portfolio này mà còn là nền tảng để em ứng dụng công nghệ
+          và AI vào học tập trong tương lai. Em xin chân thành cảm ơn!</p>
+      </div>
+    </div>
+
+    <div class="final-quote reveal">
+      <span>"Portfolio này không chỉ đánh dấu sự kết thúc của một học phần mà còn là điểm khởi
+      đầu cho hành trình học tập và ứng dụng AI một cách chủ động, sáng tạo và có trách nhiệm
+      của mình."</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Portfolio của Nguyễn Khánh Linh · MSSV 25042471 · © 2026
 </footer>
 
 <script>
-  // Chức năng đóng/mở panel rút ra bài học cực mượt
-  document.querySelectorAll('.w-toggle').forEach(toggle => {
-    toggle.addEventListener('click', () => {
-      const targetId = toggle.getAttribute('data-target');
-      const panel = document.getElementById(targetId);
-      if (!panel) return;
+  // Con trỏ phát sáng
+  const glow = document.getElementById('cursorGlow');
+  window.addEventListener('mousemove', (e) => {
+    glow.style.left = e.clientX + 'px'; glow.style.top = e.clientY + 'px'; glow.style.opacity = 1;
+  });
+  window.addEventListener('mouseleave', () => { glow.style.opacity = 0; });
 
-      if (panel.style.maxHeight) {
+  // ===== BÀI TẬP: DỮ LIỆU ĐÃ ĐƯỢC CHỈNH SỬA LẠI NỘI DUNG VÀ THÊM LINK GOOGLE DRIVE =====
+  const exercises = [
+    {
+      icon: "🗂️", 
+      title: "Thiết bị ngoại vi và Phím tắt thông dụng",
+      goal: "Thấu hiểu hoạt động phần cứng máy tính và thành thạo thao tác hệ thống không cần dùng chuột.",
+      process: "Thực hành sắp xếp tệp tin khoa học, thao tác liên tục tổ hợp phím tắt trên hệ điều hành và thiết lập môi trường làm việc cá nhân hiệu quả.",
+      link: "https://drive.google.com/drive/folders/YOUR_FOLDER_ID_1", // Hãy đổi link Drive của bài 1 ở đây
+      points: [
+        { b: "Kiểm soát thiết bị phần cứng", t: "Hiểu rõ vai trò của thiết bị ngoại vi trong việc hỗ trợ nhập xuất dữ liệu và cách duy trì hiệu suất hoạt động ổn định của máy." },
+        { b: "Tối ưu hóa phím tắt hệ thống", t: "Luyện tập thói quen sử dụng phím tắt thay thế cho thao tác chuột, giúp tiết kiệm thời gian đáng kể trong quá trình soạn thảo." },
+        { b: "Kế hoạch lưu trữ thông minh", t: "Sắp xếp cấu trúc thư mục rõ ràng từ đầu, giảm thiểu tối đa thời gian tìm kiếm tài liệu học tập bị thất lạc." },
+        { b: "Tóm lại", t: "Bước khởi đầu này giúp mình nâng cao phong cách làm việc chuyên nghiệp, dứt khoát hơn trên môi trường máy tính.", summary: true },
+      ]
+    },
+    {
+      icon: "🔎", 
+      title: "Tìm kiếm thông tin và Đánh giá học thuật",
+      goal: "Phát triển bộ lọc tư duy phản biện khi thu thập thông tin và khai thác hệ thống tư liệu nghiên cứu khoa học.",
+      process: "Áp dụng các cú pháp toán tử nâng cao trên Google và sử dụng Google Scholar để định vị bài báo khoa học chất lượng.",
+      link: "https://drive.google.com/drive/folders/YOUR_FOLDER_ID_2", // Hãy đổi link Drive của bài 2 ở đây
+      points: [
+        { b: "Lọc thông tin chuyên sâu", t: "Biết cách loại bỏ tạp âm thông tin bằng các toán tử như site:, filetype:, giúp khoanh vùng tài liệu chính xác hơn." },
+        { b: "Nhận định nguồn tin cậy", t: "Học cách kiểm chứng chéo tác giả, năm xuất bản và mức độ uy tín của tạp chí thay vì tin ngay vào kết quả mạng xã hội." },
+        { b: "Trích dẫn khoa học chuẩn mực", t: "Sử dụng các quy chuẩn trích dẫn để tôn trọng bản quyền trí tuệ của các nhà nghiên cứu đi trước." },
+        { b: "Tóm lại", t: "Bài tập rèn cho mình thói quen khắt khe với dữ liệu đầu vào, không vội vã đưa các kết luận thiếu căn cứ vào bài làm.", summary: true },
+      ]
+    },
+    {
+      icon: "🤖", 
+      title: "Viết Prompt và Làm việc với Trí tuệ Nhân tạo",
+      goal: "Làm chủ phương pháp ra lệnh có cấu trúc nhằm định hình phản hồi chất lượng từ các mô hình ngôn ngữ lớn.",
+      process: "Xây dựng các câu lệnh đa tầng kết hợp vai trò cụ thể để AI dịch thuật và sửa lỗi bài luận tiếng Hàn.",
+      link: "https://drive.google.com/drive/folders/YOUR_FOLDER_ID_3", // Hãy đổi link Drive của bài 3 ở đây
+      points: [
+        { b: "Định hình cấu trúc câu lệnh", t: "Nắm vững nguyên lý ra lệnh bao gồm Vai trò, Bối cảnh, Nhiệm vụ và Ràng buộc đầu ra để đạt kết quả tối ưu nhất." },
+        { b: "Khai thác AI học ngôn ngữ", t: "Biến AI thành người bạn bản xứ đồng hành đắc lực để học từ vựng, sửa lỗi ngữ pháp tiếng Hàn chuyên sâu." },
+        { b: "Kiểm soát ảo tưởng của AI", t: "Luôn duy trì tâm thế phản biện trước các câu trả lời tự tin nhưng thiếu chính xác của chatbot." },
+        { b: "Tóm lại", t: "Nhận thức rõ rằng mức độ hữu ích của trí tuệ nhân tạo hoàn toàn phụ thuộc vào năng lực đặt câu hỏi của người dùng.", summary: true },
+      ]
+    },
+    {
+      icon: "🤝", 
+      title: "Giao tiếp và Hợp tác hiệu quả trong Môi trường số",
+      goal: "Làm việc nhóm mượt mà thông qua thiết lập các luồng thông tin và đồng bộ hóa công việc trên nền tảng số.",
+      process: "Thực hành phân vai trò dự án, chia sẻ dữ liệu đồng bộ trên đám mây và giao tiếp không đồng bộ hiệu quả.",
+      link: "https://drive.google.com/drive/folders/YOUR_FOLDER_ID_4", // Hãy đổi link Drive của bài 4 ở đây
+      points: [
+        { b: "Đồng bộ hóa không gian làm việc", t: "Sử dụng tối ưu hệ sinh thái đám mây để mọi thành viên đều chỉnh sửa trực tiếp trên tài liệu thời gian thực." },
+        { b: "Quản trị công việc khoa học", t: "Áp dụng phân rã công việc nhỏ lẻ cùng deadline rõ ràng, tránh hiện tượng đùn đẩy trách nhiệm." },
+        { b: "Hóa giải mâu thuẫn giao tiếp", t: "Nâng cao kỹ năng phản hồi mang tính xây dựng trên các kênh chat công việc chung." },
+        { b: "Tóm lại", t: "Rút ra được bài học quý giá về cách tổ chức con người và chia sẻ dữ liệu mượt mà khi làm việc trực tuyến.", summary: true },
+      ]
+    },
+    {
+      icon: "🎨", 
+      title: "Sáng tạo Nội dung số và Ứng dụng AI tạo sinh",
+      goal: "Sử dụng AI hỗ trợ lên khung nội dung và thiết kế trực quan hóa bài thuyết trình.",
+      process: "Sử dụng các công cụ AI hỗ trợ tạo slide tự động và Canva để thiết kế lại sản phẩm truyền thông mang đậm phong cách cá nhân.",
+      link: "https://drive.google.com/drive/folders/YOUR_FOLDER_ID_5", // Hãy đổi link Drive của bài 5 ở đây
+      points: [
+        { b: "Ý tưởng hóa nhanh chóng", t: "Nhờ AI hỗ trợ phác thảo bố cục sườn bài viết nhanh, vượt qua rào cản 'bí ý tưởng' ban đầu của người viết." },
+        { b: "Trực quan hóa thiết kế", t: "Phối hợp các công cụ tạo sinh hình ảnh để tăng tính sinh động, chuyên nghiệp cho các slide thuyết trình." },
+        { b: "Bản sắc cá nhân là cốt lõi", t: "Dùng tư duy thẩm mỹ riêng để biên tập, mài giũa lại sản phẩm của AI sao cho có cảm xúc và chân thực nhất." },
+        { b: "Tóm lại", t: "Học được cách đồng sáng tạo thông minh cùng AI để nâng cao đáng kể năng suất sản xuất nội dung số.", summary: true },
+      ]
+    },
+    {
+      icon: "⚖️", 
+      title: "Đạo đức Học thuật và Sử dụng AI có Trách nhiệm",
+      goal: "Kiến tạo nguyên tắc liêm chính học thuật cá nhân khi tương tác với công nghệ thông minh.",
+      process: "Phân tích các tình huống vi phạm bản quyền số, xây dựng thói quen ghi nhận công trạng của nguồn dữ liệu AI hỗ trợ.",
+      link: "https://drive.google.com/drive/folders/YOUR_FOLDER_ID_6", // Hãy đổi link Drive của bài 6 ở đây
+      points: [
+        { b: "Minh bạch hóa quá trình sử dụng", t: "Luôn dũng cảm và sòng phẳng công khai mức độ hỗ trợ của AI trong mọi bài tập hay báo cáo khoa học." },
+        { b: "Đấu tranh với thói quen ỷ lại", t: "Coi AI là bàn đạp tư duy chứ không bao giờ biến AI thành cái bóng thay thế đầu óc suy nghĩ độc lập." },
+        { b: "Độ tin cậy của thông tin", t: "Thiết lập bước kiểm chứng nguồn dữ liệu nguyên bản trước khi đồng ý đưa vào kết quả phân tích cuối cùng." },
+        { b: "Tóm lại", t: "Nhận ra rằng sử dụng AI có trách nhiệm chính là bảo vệ danh dự và nâng niu giá trị chất xám chân chính của mình.", summary: true },
+      ]
+    },
+  ];
+
+  const workList = document.getElementById('workList');
+  exercises.forEach((ex, i) => {
+    const item = document.createElement('div');
+    item.className = 'work-item reveal';
+    const pointsHtml = ex.points.map(p => `
+      <div class="detail-point${p.summary ? ' summary' : ''}">
+        <span class="dot"></span>
+        <span class="txt"><b>${p.b}:</b> ${p.t}</span>
+      </div>`).join('');
+    
+    // ĐÃ TÍCH HỢP NÚT BẤM DRIVE ĐỒNG BỘ VÀO BỐ CỤC GỐC
+    item.innerHTML = `
+      <div class="num">${i + 1}</div>
+      <div>
+        <h3>${ex.icon} ${ex.title}</h3>
+        <div class="work-fields">
+          <div class="row"><b>Mục tiêu:</b> ${ex.goal}</div>
+          <div class="row"><b>Quá trình thực hiện:</b> ${ex.process}</div>
+        </div>
+        <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+          <button type="button" class="detail-toggle" style="margin-top: 12px;">
+            <span class="chevron">▾</span> Xem chi tiết bài học rút ra
+          </button>
+          <a href="${ex.link}" target="_blank" rel="noopener" class="btn-drive">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+            Xem bài tập trên Drive
+          </a>
+        </div>
+        <div class="detail-panel">
+          <div class="detail-panel-inner">
+            <div class="detail-list">${pointsHtml}</div>
+          </div>
+        </div>
+      </div>`;
+    workList.appendChild(item);
+
+    const toggle = item.querySelector('.detail-toggle');
+    const panel = item.querySelector('.detail-panel');
+    toggle.addEventListener('click', () => {
+      const isOpen = toggle.classList.contains('open');
+      if(isOpen){
         toggle.classList.remove('open');
         panel.style.maxHeight = null;
-        toggle.innerHTML = 'Xem bài học rút ra <span class="chevron">▸</span>';
+        toggle.innerHTML = '<span class="chevron">▾</span> Xem chi tiết bài học rút ra';
       } else {
         toggle.classList.add('open');
         panel.style.maxHeight = panel.scrollHeight + 'px';
@@ -305,29 +402,6 @@
     });
   }, { threshold: 0.3 });
   sections.forEach(s => navIo.observe(s));
-
-  // Hiệu ứng số liệu nhảy mượt mà
-  const stats = document.querySelectorAll('.stat-num');
-  const statIo = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const targetVal = parseInt(entry.target.getAttribute('data-val'));
-        let count = 0;
-        const speed = targetVal / 50; 
-        const counter = setInterval(() => {
-          count += speed;
-          if (count >= targetVal) {
-            entry.target.textContent = targetVal + (targetVal === 100 ? '%' : '');
-            clearInterval(counter);
-          } else {
-            entry.target.textContent = Math.floor(count) + (targetVal === 100 ? '%' : '');
-          }
-        }, 30);
-        statIo.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.5 });
-  stats.forEach(s => statIo.observe(s));
 </script>
 </body>
 </html>
